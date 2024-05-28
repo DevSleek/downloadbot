@@ -6,7 +6,6 @@ from telegram import Update
 
 from dtb.celery import app
 from dtb.settings import DEBUG
-from tgbot.dispatcher import dispatcher
 from tgbot.main import bot
 
 logger = logging.getLogger(__name__)

@@ -1,13 +1,28 @@
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+MAIN_MENU_KEYBOARD = [
+    ["🏠 Bosh menu"]
+]
 
-from tgbot.handlers.onboarding.manage_data import SECRET_LEVEL_BUTTON
-from tgbot.handlers.onboarding.static_text import github_button_text, secret_level_button_text
+BACK_TO = "⬅️ Ortga"
+
+VIDEO = "🎞 Video"
+MUSIC = "🎵 Music"
+FEEDBACK = "✍️ Fikr bildirish"
+SETTINGS = "⚙️ Sozlamalar"
 
 
-def make_keyboard_for_start_command() -> InlineKeyboardMarkup:
-    buttons = [[
-        InlineKeyboardButton(github_button_text, url="https://github.com/ohld/django-telegram-bot"),
-        InlineKeyboardButton(secret_level_button_text, callback_data=f'{SECRET_LEVEL_BUTTON}')
-    ]]
+MAIN_KEYBOARD = [
+    [VIDEO, MUSIC],
+    [FEEDBACK, SETTINGS],
+]
 
-    return InlineKeyboardMarkup(buttons)
+MARKS = [
+    ["😊Hammasi yoqdi ❤️"],
+    ["☺️Yaxshi ⭐️⭐️⭐️⭐️"],
+    ["😐 Yoqmadi ⭐️⭐️⭐️"],
+    ["☹️ Yomon ⭐️⭐️"],
+    ["😤 Juda yomon👎🏻"],
+]
+
+SETTINGS_KEYBOARD = [
+    ["🌐 Tilni tanlash"],
+]
